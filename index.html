@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SolaceLink</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body>
+    <!-------------- NAVBAR -------------->
+
+    <nav class="navbar">
+        <div class="navbar-logo">
+            <a href="#" class="logo-text">SolaceLink</a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Our Features</a></li>
+            <li><a href="#">Find Support</a></li>
+        </ul>
+        <div class="login-button">
+            <button class="primary-btn" id="login-btn">Login</button>
+        </div>
+        <div class="mobile-menu-toggle" id="mobile-toggle">
+            <span><i class="bi bi-list"></i></span>
+        </div>
+    </nav>
+
+    <div class="mobile-menu" id="mobile-menu">
+        <h1 class="mobile-heading">SolaceLink</h1>
+        <ul class="mobile-nav-links">
+            <li class="icon-link">
+                <span><i class="bi bi-house"></i></span>
+                <a href="#">Home</a>
+            </li>
+            <li class="icon-link">
+                <span><i class="bi bi-people"></i></span>
+                <a href="#">About Us</a>
+            </li>
+            <li class="icon-link">
+                <span><i class="bi bi-list-stars"></i></span>
+                <a href="#">Our Features</a>
+            </li>
+            <li class="icon-link">
+                <span><i class="bi bi-person-heart"></i></span>
+                <a href="#">Find Support</a>
+            </li>
+            <li><button class="menu-btn" id="mobile-login-btn">Login</button></li>
+        </ul>
+    </div>
+
+    <!-------- Hero Section ---------->
+    <div class="hero-container">
+        <div class="hero-left">
+            <h1>Empowering Your Journey to <span>Mental</span> Health and Well-being </h1>
+            <p>
+                Your mental well-being is important. At SolaceLink, we're here to support on your journey
+                towards a healthier and more balance life. Take the first step today. At SolaceLink, we're 
+                here to support on your journey towards a healthier and more balance life. 
+                Take the first step today.
+            </p>
+            <div class="hero-btns">
+                <button class="secondary-btn">Learn More</button>
+                <button class="primary-btn">Sign Up</button>
+            </div>
+        </div>
+        <div class="hero-right">
+            <img src="./images/hero.jpg" alt="HeroImage" />
+        </div>
+    </div>
+
+    <script src="navbar.js"></script>
+</body>
+</html>

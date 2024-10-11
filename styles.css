@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+}
+
+i {
+    font-size: 1.7rem;
+}
+
+.primary-btn {
+    background-color: #dbb538;
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.secondary-btn {
+    background-color: #0ea5e9;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.primary-btn:hover {
+    background-color: #b38e18;
+    transition: 0.2s ease-in-out;
+}
+
+.secondary-btn:hover {
+    background-color: #0284c7;
+    transition: 0.2s ease-in-out;
+}
+
+/* ....................  Navbar styling  ......................... */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0f766e;
+    color: white;
+    padding: 8px 80px;
+}
+
+.navbar-logo .logo-text {
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+}
+
+/* Desktop navigation links */
+.nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.nav-links li a:hover {
+    color: #cbd5e1;
+    transition: 0.2s ease;
+}
+
+/* Mobile menu toggle */
+.mobile-menu-toggle {
+    display: none;
+    color: white; 
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.mobile-menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 75%;
+    height: 100%;
+    background-color: #1f2937;
+    color: white;
+    padding: 50px 20px;
+    z-index: 1000;
+    opacity: 90%;
+}
+
+.mobile-heading {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.mobile-nav-links {
+    margin-top: 3rem;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.mobile-menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.menu-btn {
+    width: 80%;
+    padding: 15px;
+    margin-left: 1rem;
+    font-size: 1.2rem;
+    background-color: #dbb538;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.menu-btn:hover {
+    background-color: #b38e18;
+    transition: 0.2s ease-in-out;
+}
+
+.icon-link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #14b8a6;
+}
+
+/************ HERO SECTION *****************/
+
+.hero-container {
+    padding: 40px 80px;
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+.hero-left {
+    width: 55%;
+}
+
+.hero-left > h1 {
+    margin: 5rem 0 1.5rem 0;
+    color: #31a793;
+    font-size: 2.5rem;
+}
+
+.hero-left > h1 > span {
+    color: #eab308;
+}
+
+.hero-left > p {
+    font-size: 1.2rem;
+    letter-spacing: 0.8px;
+    color: #5A5A5A;
+}
+
+.hero-right {
+    width: 45%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.hero-right > img {
+    height: 60%;
+    border-radius: 10px;
+}
+
+.hero-btns {
+    margin-top: 2rem;
+    display: flex;
+    gap: 2rem;
+}
+
+
+/* Navbar Media queries for mobile */
+@media (max-width: 768px) {
+    /* NAVBAR */
+    .navbar {
+        padding: 8px 16px;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .mobile-menu-toggle {
+        display: block; 
+    }
+
+    .mobile-menu.active {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* HERO SECTION */
+    .hero-container {
+        padding: 32px 16px;
+        flex-direction: column;
+    }
+
+    .hero-left {
+        width: 100%;
+    }
+
+    .hero-right {
+        width: 100%;
+    }
+
+    .hero-right > img {
+        width: 100%;
+        border-radius: 10px;
+    }
+}
+
