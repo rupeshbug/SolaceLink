@@ -42,6 +42,10 @@ i {
     transition: 0.2s ease-in-out;
 }
 
+li {
+    list-style: none;
+}
+
 /* ....................  Navbar styling  ......................... */
 .navbar {
     display: flex;
@@ -146,6 +150,11 @@ i {
     color: #14b8a6;
 }
 
+
+
+
+
+
 /************ HERO SECTION *****************/
 
 .hero-container {
@@ -206,6 +215,12 @@ i {
     cursor: pointer;
 }
 
+
+
+
+
+
+
 /******** WHY WE EXIST **********/
 
 .why-we-exist {
@@ -247,6 +262,13 @@ i {
     width: 100%;
     border-radius: 10px;
 }
+
+
+
+
+
+
+
 
 /********** Features Section ***********/
 
@@ -305,6 +327,15 @@ i {
     font-size: 1rem;
     color: #555;
 }
+
+
+
+
+
+
+
+
+
 
 /********* POWER TO BELIEVE **************/
 
@@ -378,6 +409,15 @@ i {
     color: #252323;
     text-align: left;
 }
+
+
+
+
+
+
+
+
+
 
 /************ FOOTER SECTION *****************/
 
@@ -458,6 +498,106 @@ i {
     color: #9ca3af;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+/**************** ABOUT PAGE ***************/
+
+.about-container {
+    padding: 60px 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 7rem;
+    margin-bottom: 4rem;
+}
+
+.about-section > img {
+    width: 40%;
+    height: 500px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.about-section > div {
+    width: 60%;
+}
+
+.about-section > div > h1 {
+    color: #333333;
+    font-size: 2rem;
+    border-bottom: 3px solid #eab308;
+    width: 25%;
+    margin-bottom: 2rem;
+    padding: 1rem 0;
+}
+
+.about-section > div > p{
+    color: #666666;
+    letter-spacing: 1.2px;
+    line-height: 1.5;
+}
+
+
+.mission-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 7rem;
+    margin-bottom: 4rem;
+}
+
+.mission-section > div {
+    width: 60%;
+}
+
+.mission-section > img {
+    width: 40%;
+    height: 500px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.mission-section > div > h1 {
+    color: #333333;
+    font-size: 2rem;
+    border-bottom: 3px solid #eab308;
+    width: 25%;
+    margin-bottom: 2rem;
+    padding: 1rem 0;
+}
+
+.features-section{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.features-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: #f1f5f9;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 75%;
+}
 
 /* Large Screens */
 @media (max-width: 1280px){
