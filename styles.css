@@ -284,6 +284,10 @@ li {
     color: #333333;
 }
 
+.features-heading > span {
+    color: #eab308;
+}
+
 .features-subheading {
     font-size: 1.2rem;
     margin-bottom: 3rem;
