@@ -206,7 +206,7 @@ li {
     margin-top: 3.5rem;
     display: flex;
     gap: 1.5rem;
-    animation: bounce 2.2s infinite;
+    animation: bounce 2.5s infinite;
 }
 
 .hero-social-icons > span > i {
@@ -1261,7 +1261,7 @@ li {
         transform: translateY(0);
     }
     50% {
-        transform: translateY(-10px);
+        transform: translateY(-16px);
     }
 }
 
