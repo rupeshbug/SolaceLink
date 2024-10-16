@@ -620,7 +620,131 @@ li {
 }
 
 
-/* Large Screens */
+
+
+
+
+/**************** FEATURES PAGE ***************/
+
+.features-container {
+    padding: 60px 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    margin: 2rem 0;
+}
+
+.features-intro {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.features-intro h1 {
+    font-size: 2.5rem;
+    color: #333333;
+    margin-bottom: 1rem;
+}
+
+.features-intro h1 span {
+    color: #eab308;
+}
+
+.features-intro p {
+    font-size: 1.2rem;
+    color: #666666;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+}
+
+.feature-card {
+    background-color: #f1f5f9;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.feature-card > .feature-icon > i {
+    font-size: 2.5rem;
+    color: #31a793;
+    margin-bottom: 1rem;
+}
+
+.feature-content h2 {
+    font-size: 1.5rem;
+    color: #333333;
+    margin-bottom: 1rem;
+}
+
+.feature-content p {
+    font-size: 1rem;
+    color: #666666;
+    line-height: 1.5;
+    letter-spacing: 1.2px;
+}
+
+@media screen and (max-width: 900px) {
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .features-container {
+        padding: 20px;
+    }
+
+    .features-intro h1 {
+        font-size: 2rem;
+    }
+
+    .features-intro p {
+        font-size: 1rem;
+        margin-bottom: 0;
+    }
+
+    .feature-content h2 {
+        font-size: 1.5rem;
+    }
+
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .features-page {
+        padding: 30px;
+    }
+
+    .features-intro h1 {
+        font-size: 2rem;
+    }
+
+    .features-intro p {
+        font-size: 1rem;
+    }
+
+    .feature-card h2 {
+        font-size: 1.5rem;
+    }
+
+    .feature-card p {
+        font-size: 0.9rem;
+    }
+}
+
+
+
+/*********** Large Screens ***********/
+
 @media (max-width: 1280px){
     /* HERO SECTION */
     .hero-container {
