@@ -578,12 +578,29 @@ li {
     padding: 1rem 0;
 }
 
+.mission-section > div > p{
+    color: #666666;
+    letter-spacing: 1.2px;
+    line-height: 1.5;
+}
+
 .features-section{
     display: flex;
     flex-direction: column;
     gap: 2rem;
     justify-content: center;
     align-items: center;
+}
+
+.features-header {
+    color: #31a793;
+    font-size: 2rem;
+}
+
+.features-header > span > i {
+    color: #eab308;
+    margin-right: 10px;
+    font-size: 2rem;
 }
 
 .features-list {
@@ -597,7 +614,11 @@ li {
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     width: 75%;
+    color: #666666;
+    letter-spacing: 1.2px;
+    line-height: 1.5;
 }
+
 
 /* Large Screens */
 @media (max-width: 1280px){
@@ -663,6 +684,73 @@ li {
         text-align: center;
     }
 }
+
+
+
+/********* About Page ************/
+@media (max-width: 1024px) {
+    .about-container {
+        padding: 40px 100px;
+    }
+    
+    .about-section {
+        flex-direction: column;
+        gap: 2rem;
+        width: 100%;
+    }
+    
+    .about-section > img {
+        width: 100%;
+    }
+    
+    .about-section > div {
+        width: 100%;
+    }
+    
+    .about-section > div > h1 {
+        width: 25%;
+    }
+    
+    .about-section > div > p{
+        color: #666666;
+        letter-spacing: 1.2px;
+        line-height: 1.5;
+    }
+    
+    
+    .mission-section {
+        flex-direction: column;
+        gap: 2rem;
+        margin-bottom: 4rem;
+    }
+    
+    .mission-section > div {
+        width: 100%;
+    }
+    
+    .mission-section > img {
+        width: 100%;
+    }
+    
+    .mission-section > div > h1 {
+        width: 28%;
+    }
+    
+    .mission-section > div > p{
+        color: #666666;
+        letter-spacing: 1.2px;
+        line-height: 1.5;
+    }
+    
+    .features-section{
+        width: 100%;
+    }
+    
+    .features-list {
+        width: 100%;
+    }
+}
+
 
 /* Navbar Media queries for small screens */
 @media (max-width: 768px) {
@@ -770,6 +858,19 @@ li {
     
     .content > p {
         font-size: 1rem;
+    }
+
+    /* About Page */
+    .about-container {
+        padding: 40px 20px;
+    }
+
+    .mission-section > div > h1 {
+        width: 55%;
+    }
+
+    .about-section > div > h1 {
+        width: 50%;
     }
 }
 
