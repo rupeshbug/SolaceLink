@@ -76,7 +76,7 @@
                 <p><strong>Specialty:</strong> Licensed Psychiatrist</p>
                 <p><strong>Email:</strong> sarah.green@example.com</p>
                 <p><strong>Phone:</strong> +1 (555) 123-4567</p>
-                <button class="secondary-btn">Book a Session</button>
+                <button onclick="showPopup()" class="secondary-btn">Book a Session</button>
             </div>
 
             <div class="professional-card">
@@ -87,7 +87,7 @@
                 <p><strong>Specialty:</strong> Clinical Psychologist</p>
                 <p><strong>Email:</strong> michael.johnson@example.com</p>
                 <p><strong>Phone:</strong> +1 (555) 234-5678</p>
-                <button class="secondary-btn">Book a Session</button>
+                <button onclick="showPopup()" class="secondary-btn">Book a Session</button>
             </div>
 
             <div class="professional-card">
@@ -98,7 +98,7 @@
                 <p><strong>Specialty:</strong> Mental Health Counselor</p>
                 <p><strong>Email:</strong> emily.carter@example.com</p>
                 <p><strong>Phone:</strong> +1 (555) 345-6789</p>
-                <button class="secondary-btn">Book a Session</button>
+                <button onclick="showPopup()" class="secondary-btn">Book a Session</button>
             </div>
 
             <div class="professional-card">
@@ -109,10 +109,18 @@
                 <p><strong>Specialty:</strong> Psychiatrist</p>
                 <p><strong>Email:</strong> robert.martinez@example.com</p>
                 <p><strong>Phone:</strong> +1 (555) 456-7890</p>
-                <button class="secondary-btn">Book a Session</button>
+                <button onclick="showPopup()" class="secondary-btn">Book a Session</button>
             </div>
         </div>
     </section>
+
+     <!-- Popup Modal -->
+     <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePopup()">&times;</span>
+            <p>You will receive an email soon with the details of your booking!</p>
+        </div>
+    </div>
 
     <!-- Footer -->
     <footer class="footer">
@@ -149,5 +157,6 @@
   
 
     <script src="navbar.js"></script>
+    <script src="popup.js"></script>
 </body>
 </html>
