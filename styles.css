@@ -55,7 +55,18 @@ li {
     border-bottom: 1px solid rgb(199, 194, 194);
 }
 
-.navbar-logo .logo-text {
+.navbar-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+}
+
+.navbar-logo span i {
+    color: #0f766e;
+}
+
+.logo-text {
     font-size: 1.5rem;
     color: #374151;
     text-decoration: none;
@@ -439,12 +450,21 @@ li {
     flex-wrap: wrap;
 }
 
+.footer-logo {
+    display: flex;
+    flex-direction: column;
+}
+
 .footer-logo h3 {
     font-size: 1.8rem;
 }
 
+.footer-logo h3 span i {
+    color: #eab308;
+}
+
 .footer-logo p {
-    color: #9ca3af;
+    color: #c2c6cc;
     font-size: 1rem;
     margin-top: 1rem;
 }
