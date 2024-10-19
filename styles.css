@@ -775,6 +775,7 @@ li {
 
 
 
+
 /* PROFESSIONAL SUPPORT */
 
 .professional-support {
@@ -1009,7 +1010,6 @@ li {
 .resource-hub {
     padding: 60px 20px;
     text-align: center;
-    background-color: #f4f4f9;
 }
 
 .hub-header h1 {
@@ -1019,8 +1019,10 @@ li {
 }
 
 .hub-header p {
-    color: #333333;
+    color: #666666;
     font-size: 1.1rem;
+    width: 60%;
+    margin: 0 auto;
 }
 
 .hub-header h1 span {
@@ -1031,7 +1033,7 @@ li {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 60px;
+    gap: 70px;
     margin-top: 50px;
 }
 
@@ -1451,6 +1453,10 @@ li {
     }
 
     .blog-card {
+        width: 100%;
+    }
+
+    .hub-header p {
         width: 100%;
     }
     
