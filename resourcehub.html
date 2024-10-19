@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resource Hub</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body>
+    <!-------------- NAVBAR -------------->
+
+    <nav class="navbar">
+        <div class="navbar-logo">
+            <a href="index.html" class="logo-text">SolaceLink</a>
+            <span><i class="bi bi-yin-yang"></i></span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="features.html">Our Features</a></li>
+            <li><a href="support.html">Professional Support</a></li>
+        </ul>
+        <div class="login-button">
+            <button class="primary-btn" id="login-btn" onclick="location.href='/contact.html'">Connect With Us</button>
+        </div>
+        <div class="mobile-menu-toggle" id="mobile-toggle">
+            <span><i class="bi bi-list"></i></span>
+        </div>
+    </nav>
+
+    <div class="mobile-menu" id="mobile-menu">
+        <h1 class="mobile-heading">SolaceLink</h1>
+        <ul class="mobile-nav-links">
+            <li class="icon-link">
+                <span><i class="bi bi-house"></i></span>
+                <a href="#">Home</a>
+            </li>
+            <li class="icon-link">
+                <span><i class="bi bi-people"></i></span>
+                <a href="/about.html">About Us</a>
+            </li>
+            <li class="icon-link">
+                <span><i class="bi bi-list-stars"></i></span>
+                <a href="#">Our Features</a>
+            </li>
+            <li class="icon-link">
+                <span><i class="bi bi-person-heart"></i></span>
+                <a href="#">Find Support</a>
+            </li>
+            <li><button class="menu-btn" id="mobile-login-btn" onclick="location.href='/contact.html'">Connect With Us</button></li>
+        </ul>
+    </div>
+
+    <!-- Resource Hub Section -->
+    <section class="resource-hub">
+        <div class="hub-header">
+            <h1>Explore Our Mental Health <span>Blogs</span></h1>
+            <p>Learn more about mental health, wellness, and self-care from our expert-curated blog posts.</p>
+        </div>
+
+        <div class="blog-container">
+            <!-- Blog 1 -->
+            <div class="blog-card">
+                <img src="images/blog1.jpeg" alt="Mental Health Awareness">
+                <div class="blog-content">
+                    <h3>Mental Health Awareness: The First Step to Well-being</h3>
+                    <p class="blog-info">By <span class="blog-author">Dr. Jane Doe</span> | Published on <span class="blog-date">Oct 15, 2024</span></p>
+                    <p class="blog-card-text">Understanding mental health is the first step toward personal well-being. Learn more about how to improve mental health and wellness through daily practices...</p>
+                    <a href="blog1.html" class="read-more-btn">Read More</a>
+                </div>
+            </div>
+
+            <!-- Blog 2 -->
+            <div class="blog-card">
+                <img src="images/blog2.jpeg" alt="Coping with Anxiety">
+                <div class="blog-content">
+                    <h3>Coping with Anxiety: Practical Tips for Daily Life</h3>
+                    <p class="blog-info">By <span class="blog-author">Dr. John Smith</span> | Published on <span class="blog-date">Oct 10, 2024</span></p>
+                    <p class="blog-card-text">Anxiety can be challenging, but there are practical ways to manage it. Discover useful strategies that can help you cope with anxiety and lead a balanced life...</p>
+                    <a href="blog2.html" class="read-more-btn">Read More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <h3>SolaceLink <span><i class="bi bi-yin-yang"></i></span></h3>
+                <p>Your trusted companion in mental wellness.</p>
+            </div>
+
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Our Features</a></li>
+                    <li><a href="#">Find Support</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-social">
+                <h4>Connect with Us</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-twitter-x"></i></a>
+                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 SolaceLink. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+    <script src="navbar.js"></script>
+</body>
+</html>

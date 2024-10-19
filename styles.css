@@ -1006,6 +1006,98 @@ li {
 
 
 
+
+
+
+/************** Resource Hub ***********/
+.resource-hub {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #f4f4f9;
+}
+
+.hub-header h1 {
+    font-size: 2.5rem;
+    color: #14b8a6;
+    margin-bottom: 0.8rem;
+}
+
+.hub-header p {
+    color: #333333;
+    font-size: 1.1rem;
+}
+
+.hub-header h1 span {
+    color: #eab308;
+}
+
+.blog-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 60px;
+    margin-top: 50px;
+}
+
+.blog-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 420px;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.blog-card:hover {
+    transform: scale(1.05);
+}
+
+.blog-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.blog-content {
+    padding: 20px;
+}
+
+.blog-content h3 {
+    font-size: 1.4rem;
+    color: #333333;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.blog-card-text {
+    color: #666666;
+}
+
+.blog-info {
+    font-size: 0.9rem;
+    color: #666666;
+    margin-bottom: 12px;
+}
+
+.read-more-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0ea5e9;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+
+.read-more-btn:hover {
+    background-color: #0284c7;
+}
+
+
+
+
+
 /********** MEDIA QUERIES **********/
 
 
@@ -1354,6 +1446,17 @@ li {
     .support-header p {
         width: 100%;
     }
+
+    /* Resource Hub */
+
+    .blog-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .blog-card {
+        width: 100%;
+    }
     
 }
 
@@ -1385,4 +1488,5 @@ li {
         transform: translateY(-16px);
     }
 }
+
 
