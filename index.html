@@ -182,7 +182,29 @@
             <p>&copy; 2024 SolaceLink. All rights reserved.</p>
         </div>
     </footer>
+
+    <!-- Chatbot Button and Popup Structure -->
+    <div id="chatbot-icon" class="chatbot-icon">
+        <span><i class="bi bi-chat-dots-fill"></i></span>
+    </div>
+
+    <div id="chat-popup" class="chat-popup">
+        <div class="chat-header">
+            <p>Need help? Ask away!</p>
+            <span id="close-chat" class="close-chat">&times;</span>
+        </div>
+        <div id="chatbox" class="chatbox">
+            <div class="bot-message">
+                <p>Hello! How can I assist you today?</p>
+            </div>
+        </div>
+        <div class="chat-input-section">
+            <input type="text" id="user-input" placeholder="Type your message here..." />
+            <button id="send-btn" class="send-btn">Send</button>
+        </div>
+    </div>
   
     <script src="navbar.js"></script>
+    <script src="chatbot.js"></script>
 </body>
 </html>
